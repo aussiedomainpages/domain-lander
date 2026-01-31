@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<title>Domain For Sale</title>
+</head>
+<body>
+
+<h1 id="title">Domain For Sale</h1>
+<p id="domain"></p>
+
+<form action="https://formspree.io/f/xnjvrdno" method="POST">
+
+<input type="hidden" name="domain" id="domainField">
+
+<input type="text" name="name" placeholder="Your name" required><br><br>
+
+<input type="email" name="email" placeholder="Your email" required><br><br>
+
+<input type="text" name="offer" placeholder="Your offer (AUD)"><br><br>
+
+<textarea name="message" placeholder="Message"></textarea><br><br>
+
+<button type="submit">Send enquiry</button>
+
+</form>
+
+<script>
+var host = window.location.hostname;
+document.getElementById("domain").innerText = host;
+document.getElementById("title").innerText = host + " is for sale";
+document.getElementById("domainField").value = host;
+</script>
+
+</body>
+</html>
