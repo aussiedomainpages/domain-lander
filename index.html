@@ -25,7 +25,8 @@
 </form>
 
 <script>
-var host = window.location.hostname;
+var host = window.location.hostname.replace(/^www\./, '');
+
 document.getElementById("domain").innerText = host;
 document.getElementById("title").innerText = host + " is for sale";
 document.getElementById("domainField").value = host;
@@ -33,3 +34,4 @@ document.getElementById("domainField").value = host;
 
 </body>
 </html>
+
